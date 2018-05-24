@@ -1,7 +1,7 @@
 
 
 
- 
+node { 
 stage('prep') {
 
 checkout scm 
@@ -28,6 +28,7 @@ myTestContainer.inside("-w /usr/src/mymaven" ) {
 
 sh 'mvn package'
 
+}
 }
 }
 

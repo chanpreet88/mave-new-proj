@@ -1,7 +1,7 @@
 
 
 
-node slave { 
+node (label: 'slave') { 
 stage('prep') {
 
 checkout scm 
